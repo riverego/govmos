@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "https://riverego.github.io/govmos/static/css/main.6833913d.css",
-    "main.js": "https://riverego.github.io/govmos/static/js/main.c36cad51.js",
+    "main.js": "https://riverego.github.io/govmos/static/js/main.cafb35da.js",
     "static/css/131.a694da3b.chunk.css": "https://riverego.github.io/govmos/static/css/131.a694da3b.chunk.css",
-    "static/js/131.aeccfe14.chunk.js": "https://riverego.github.io/govmos/static/js/131.aeccfe14.chunk.js",
+    "static/js/131.2fffccd4.chunk.js": "https://riverego.github.io/govmos/static/js/131.2fffccd4.chunk.js",
     "static/js/387.7ee86b29.chunk.js": "https://riverego.github.io/govmos/static/js/387.7ee86b29.chunk.js",
     "static/media/icons-rounded.otf": "https://riverego.github.io/govmos/static/media/icons-rounded.75094cd7dd7f9b19a846.otf",
     "static/media/Lato-Italic.ttf": "https://riverego.github.io/govmos/static/media/Lato-Italic.a9f3ee269217f44df65f.ttf",
@@ -19,13 +19,13 @@
     "index.html": "https://riverego.github.io/govmos/index.html",
     "static/media/twitter.svg": "https://riverego.github.io/govmos/static/media/twitter.c062c043cf8e32eff6be00dc6db864c4.svg",
     "main.6833913d.css.map": "https://riverego.github.io/govmos/static/css/main.6833913d.css.map",
-    "main.c36cad51.js.map": "https://riverego.github.io/govmos/static/js/main.c36cad51.js.map",
+    "main.cafb35da.js.map": "https://riverego.github.io/govmos/static/js/main.cafb35da.js.map",
     "131.a694da3b.chunk.css.map": "https://riverego.github.io/govmos/static/css/131.a694da3b.chunk.css.map",
-    "131.aeccfe14.chunk.js.map": "https://riverego.github.io/govmos/static/js/131.aeccfe14.chunk.js.map",
+    "131.2fffccd4.chunk.js.map": "https://riverego.github.io/govmos/static/js/131.2fffccd4.chunk.js.map",
     "387.7ee86b29.chunk.js.map": "https://riverego.github.io/govmos/static/js/387.7ee86b29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6833913d.css",
-    "static/js/main.c36cad51.js"
+    "static/js/main.cafb35da.js"
   ]
 }
