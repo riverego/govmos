@@ -40,7 +40,7 @@ function fetcher([_url, params]) {
     method: 'GET',
     cache: 'no-store',
   }
-  let url = _url
+  let url = process.env.PUBLIC_URL + _url
   if (params) {
     try {
       const search = new URLSearchParams(Object.keys(params).map(k => {
