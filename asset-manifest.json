@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.edfc76be.css",
+    "main.js": "/static/js/main.cc42135f.js",
+    "static/css/131.068fd08a.chunk.css": "/static/css/131.068fd08a.chunk.css",
+    "static/js/131.aeccfe14.chunk.js": "/static/js/131.aeccfe14.chunk.js",
+    "static/js/387.7ee86b29.chunk.js": "/static/js/387.7ee86b29.chunk.js",
+    "static/media/icons-rounded.otf": "/static/media/icons-rounded.75094cd7dd7f9b19a846.otf",
+    "static/media/Lato-Italic.ttf": "/static/media/Lato-Italic.a9f3ee269217f44df65f.ttf",
+    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/secret.webp": "/static/media/secret.3c91a541fc01f1eae035.webp",
+    "static/media/cosmos.webp": "/static/media/cosmos.719f8cc92bda11ae27bf.webp",
+    "static/media/juno.webp": "/static/media/juno.98262c2aa199f516f0f9.webp",
+    "static/media/osmosis.webp": "/static/media/osmosis.66d658e4428b71727110.webp",
+    "static/media/akash.webp": "/static/media/akash.66143113b5a6de2de7d8.webp",
+    "static/media/logo_MOS.svg": "/static/media/logo_MOS.9c95577529318c8ef186a2dae545e76d.svg",
+    "static/media/logo_GOV.svg": "/static/media/logo_GOV.8962bc6308a07c95b060252c8eedc199.svg",
+    "static/media/twitter.svg": "/static/media/twitter.c062c043cf8e32eff6be00dc6db864c4.svg",
+    "index.html": "/index.html",
+    "main.edfc76be.css.map": "/static/css/main.edfc76be.css.map",
+    "main.cc42135f.js.map": "/static/js/main.cc42135f.js.map",
+    "131.068fd08a.chunk.css.map": "/static/css/131.068fd08a.chunk.css.map",
+    "131.aeccfe14.chunk.js.map": "/static/js/131.aeccfe14.chunk.js.map",
+    "387.7ee86b29.chunk.js.map": "/static/js/387.7ee86b29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edfc76be.css",
+    "static/js/main.cc42135f.js"
+  ]
+}
