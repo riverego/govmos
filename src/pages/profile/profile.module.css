@@ -1,0 +1,47 @@
+.container {
+  margin: .5em;
+  padding: 3em;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.container textarea {
+  resize: vertical;
+}
+
+.container>label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.label, .fixed :first-child {
+  color: #aaa;
+  font-size: .9em;
+}
+
+.input {
+  padding: 1em .5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.fixed {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.save {
+  border: none;
+  --active-color: white;
+  
+  font-size: 1em;
+  color: white;
+  margin: 0;
+}
+
+.save-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3em;
+}

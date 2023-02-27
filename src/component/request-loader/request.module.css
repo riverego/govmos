@@ -1,0 +1,39 @@
+.spinner {
+  margin: 0 auto;
+  padding: 2em 0;
+  width: 3em;
+  text-align: center;
+  display: block;
+}
+
+.spinner > span {
+  width: .8em;
+  height: .8em;
+  margin-right: .2em;
+  background-color: var(--spinner-color,  rgba(150,150,150,.1));
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner :first-child {
+  animation-delay: -0.32s;
+}
+
+.spinner :nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.error {
+  text-align: center;
+  padding: 1em;
+}
+
+.retry {
+  margin: 2em auto;
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}

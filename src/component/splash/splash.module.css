@@ -1,0 +1,213 @@
+.container {
+  --start-delay: 2s;
+  --step1-duration: .6s;
+  --step2-duration: .8s;
+  --ending: 2.8s;
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1vh;
+}
+
+.card-container {
+  --p: calc(4 * var(--slot-size));
+  
+  margin-top: 20em;
+  padding-top: 5em;
+  box-sizing: content-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  /* height: 0.75em; */
+  position: relative;
+  opacity: 0;
+  animation: appear .8s linear both;
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 5em;
+  margin: var(--p) var(--p) 3px;
+  box-shadow: var(--card-shadow);
+  flex-grow: 1;
+  z-index: 1;
+  transition: transform;
+  transform: translateY(0px);
+  transform-origin: 150% 100%;
+  animation: card-slide var(--step1-duration) ease-in-out  var(--start-delay) both;
+}
+
+@keyframes card-slide {
+  0% {
+    transform: translateY(0%) scale(1);
+  }
+  30% {
+    transform: rotate(5deg) translate(-5%,-5%) scale(.95);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(.8,0,1,.6);
+    transform: rotate(5deg) translate(-5%,-5%) scale(.95);
+  }
+  100% {
+    transform: rotate(-15deg) translate(-6%,160%) scale(.95);
+  }
+}
+
+.gov, .mos {
+  display: block;
+  width: 25em;
+  margin: 0 auto;
+  animation: logo 1.2s linear both;
+}
+
+.gov {
+  --side: -1;
+  /* transform: translateX(calc(var(--progress) * -1)); */
+}
+.mos {
+  --side: 1;
+  /* transform: translateX(var(--progress)); */
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(calc(9% * var(--side)));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(calc(10% * var(--side)));
+  }
+}
+
+
+.slot {
+  border-bottom: var(--slot-size) solid #9fa2b0;
+  border-left: var(--slot-size) solid var(--bg-color);
+  border-right: var(--slot-size) solid var(--bg-color);
+  position: absolute;
+  bottom: 0;
+  left: var(--p);
+  right: var(--p);
+  animation: slot var(--step2-duration) ease-in-out var(--start-delay) both;
+}
+
+.slot-shadow {
+  position: absolute;
+  top: 100%;
+  left: var(--p);
+  right: var(--p);
+  height: calc(3 * var(--slot-size));
+  z-index: 2;
+  box-shadow: var(--slot-shadow);
+  animation: slot var(--step2-duration) ease-in-out var(--start-delay) both;
+}
+
+@keyframes slot {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(.41,.08,.71,-0.58);
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+
+.boxes {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 2.5em;
+}
+
+.check, .boxes::after {
+  position: absolute;
+  top: -1em;
+  left: -1em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  font-weight: bolder;
+}
+
+.check {
+  animation: check .5s cubic-bezier(0, 0, 0.2, 1) var(--ending) both;
+}
+
+@keyframes check {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.boxes::after {
+  content: '';
+  animation: ripple 1s cubic-bezier(0, 0, 0.2, 1) var(--ending) both;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+.punchline {
+  position: relative;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0;
+  animation: appear 1s linear calc(var(--ending) + 1s) both;
+}
+.punchline::before, .punchline::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 2em;
+  height: 2px;
+  border-radius: 2px;
+}
+.punchline::before {
+  right: 100%;
+  background: linear-gradient(90deg, #cdcdcd00 0%, #cdcdcdFF 100%);
+}
+.punchline::after {
+  left: 100%;
+  background: linear-gradient(90deg, #cdcdcdFF 0%, #cdcdcd00 100%);
+}

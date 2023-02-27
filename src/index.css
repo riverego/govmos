@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(./fonts/Lato-Regular.ttf);
+ }
+ @font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  src: url(./fonts/Lato-Italic.ttf);
+}
+ @font-face {
+  font-family: 'Lato';
+  font-weight: bold;
+  src: url(./fonts/Lato-Bold.ttf);
+}
+
+body {
+  --bg-color: #fefefe;
+  --card-bg: white;
+  --card-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+  --slot-shadow: 0 calc(-1 * var(--slot-size)) var(--slot-size) calc(-1 * var(--slot-size)) rgba(66, 66, 66, 0.8);
+  --slot-size: .5vh;
+  
+  --spinner-color: #ddd;
+  --primary: #8d8fff;
+  --green: #51de63;
+  --red: #e94a4a;
+  
+  background: var(--bg-color);
+  margin: 0;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  overflow-anchor: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+button, a {
+  --active-color: var(--primary);
+  --color: currentColor;
+  
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-decoration: none;
+  padding: 0 8px 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  line-height: inherit;
+  user-select: none;
+  appearance: none;
+  overflow: visible;
+  transition: color .5s, opacity .5s, background-color .5s, border-color .5s, transform .1s;
+  cursor: pointer;
+  color: var(--color);
+}
+
+button {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+button:hover, button:focus-visible, button.active, a:hover, a:focus-visible, a.active {
+  color: var(--active-color);
+}
+
+
+input, textarea {
+  font-family: var(--font-family);
+  line-height: 1.4em;
+  font-size: 1em;
+  margin: 0;
+  outline: 0;
+  transition: border-color .5s;
+  background: transparent;
+  width: 100%;
+  border: none;
+  color: currentColor;
+}
+
+input::placeholder {
+  color: #ccc;
+}

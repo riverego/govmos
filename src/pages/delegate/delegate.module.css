@@ -1,0 +1,67 @@
+.container {
+  padding: 1em;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.entry {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.entry:last-child {
+  border: none;
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+}
+.title {
+  min-width: 0;
+  flex-grow: 1;
+}
+
+.name, .wallet {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name {
+  font-size: 1.1em;
+  color: var(--primary);
+}
+
+.wallet {
+  color: #ccc;
+}
+
+.description {
+  margin-top: 1em;
+  white-space: pre-line;
+  font-weight: 300;
+}
+
+.expand {
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials :global(.btn) {
+  color: #aaa;
+  border: none;
+}
+
+.no-result {
+  padding: 2em;
+  font-size: 1.2em;
+  color: #ccc;
+  text-align: center;
+}

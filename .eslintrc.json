@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "env" : {
+    "browser" : true,
+    "node" : true,
+    "es6" : true
+  },
+  "rules" : {
+    "no-unused-vars" : 2,
+    "no-undef": "error",
+    "import/no-anonymous-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

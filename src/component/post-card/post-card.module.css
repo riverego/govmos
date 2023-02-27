@@ -1,0 +1,13 @@
+.card {
+  background: var(--card-bg);
+  padding: 2em;
+  box-shadow: var(--card-shadow);
+}
+
+.card::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-top: 1px solid black;
+  box-shadow: var(--card-line-shadow);
+}
